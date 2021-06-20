@@ -211,7 +211,7 @@
 		if (directory[ckey])
 			A.associate(directory[ckey])
 	if(findtext(manager_file_text,ckey) && !holder)
-		holder = new("Manager", FALSE, ckey)
+		holder = new("Host", FALSE, ckey)
 		src.admin_title = "Manager"
 		var/datum/admins/A = new/datum/admins(holder.rank, holder.rights, ckey)
 		if (directory[ckey])
