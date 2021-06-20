@@ -304,7 +304,7 @@ var/global/list/round_voters = list() //Keeps track of the individuals voting fo
 			if (admin)
 				. += "<li><a href='?src=\ref[src];vote=custom'>Custom</a></li>"
 			. += "</ul><hr>"
-		. += "<a href='?src=\ref[src];vote=close' style='position:absolute;right:50px'>Close</a></body></html>"
+		. += "<a href='?src=\ref[src];vote=close' style='position:absolute;right:50px'>Close</a></body><meta http-equiv='refresh' content='3'></html>"
 
 		return .
 
