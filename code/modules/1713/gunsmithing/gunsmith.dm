@@ -564,6 +564,7 @@
 	caliber = "caliber"
 	ammo_type = /obj/item/ammo_casing
 	magazine_type = /obj/item/ammo_magazine/emptypouch
+	good_mags = list(/obj/item/ammo_magazine)
 
 /obj/item/weapon/gun/projectile/custom/New()
 	..()
@@ -692,6 +693,7 @@
 			gun_type = GUN_TYPE_PISTOL
 			single_action = FALSE
 			equiptimer -= 1
+			slot_flags = SLOT_HOLSTER
 			accuracy_list = list(
 				// small body parts: head, hand, feet
 				"small" = list(
@@ -750,6 +752,7 @@
 			fire_delay = 3
 			equiptimer -= 1
 			gun_type = GUN_TYPE_PISTOL
+			slot_flags = SLOT_HOLSTER
 			accuracy_list = list(
 				// small body parts: head, hand, feet
 				"small" = list(

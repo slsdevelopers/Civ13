@@ -197,7 +197,7 @@
 		/obj/item/clothing/mask/gas/british = 15,
 		/obj/item/stack/medical/bruise_pack/bint = 10,
 		/obj/item/weapon/material/shovel/trench = 10,
-		/obj/item/weapon/reagent_containers/food/drinks/bottle/canteen/full = 30,
+		/obj/item/weapon/reagent_containers/food/drinks/bottle/canteen/ww2/german = 30,
 		/obj/item/weapon/reagent_containers/food/snacks/MRE/generic/british = 50,
 	)
 /obj/structure/vending/ww1gerapparel
@@ -382,7 +382,7 @@
 		/obj/item/clothing/head/ww2/jap_headband = 10,
 		/obj/item/stack/medical/bruise_pack/bint = 10,
 		/obj/item/weapon/material/shovel/trench = 10,
-		/obj/item/weapon/reagent_containers/food/drinks/bottle/canteen/full = 30,
+		/obj/item/weapon/reagent_containers/food/drinks/bottle/canteen/ww2/jap = 30,
 		/obj/item/weapon/reagent_containers/food/snacks/MRE/generic/japanese = 50,
 	)
 /obj/structure/vending/japweapons_ww2
@@ -528,7 +528,7 @@ obj/structure/vending/sofammo
 		/obj/item/stack/medical/bruise_pack/bint = 10,
 		/obj/item/weapon/material/shovel/trench = 10,
 		/obj/item/flashlight/flashlight = 15,
-		/obj/item/weapon/reagent_containers/food/drinks/bottle/canteen/full = 30,
+		/obj/item/weapon/reagent_containers/food/drinks/bottle/canteen/ww2/german = 30,
 		/obj/item/weapon/reagent_containers/food/snacks/MRE/generic/russian = 50,
 
 	)
@@ -787,6 +787,7 @@ obj/structure/vending/hezammo
 		/obj/item/weapon/gun/projectile/submachinegun/ak74/aks74/aks74u/aks74uso = 8,
 		/obj/item/weapon/gun/projectile/automatic/pkm = 8,
 		/obj/item/weapon/gun/projectile/semiautomatic/svd = 4,
+		/obj/item/weapon/gun/launcher/grenadelauncher/M79 = 4,
 		/obj/item/weapon/gun/projectile/pistol/tt30  = 15,
 		/obj/item/weapon/attachment/bayonet/military = 15,
 		/obj/item/weapon/grenade/smokebomb = 15,
@@ -806,7 +807,8 @@ obj/structure/vending/hezammo
 	products = list(
 		/obj/item/ammo_magazine/ak74 = 50,
 		/obj/item/ammo_magazine/pkm/c100 = 25,
-		/obj/item/ammo_magazine/svd = 15,
+		/obj/item/ammo_magazine/svd = 16,
+		/obj/item/ammo_casing/grenade_l/teargas = 16,
 		/obj/item/ammo_magazine/tt30 = 15,
 		/obj/item/ammo_magazine/pkm = 8,
 		/obj/item/ammo_magazine/maxim = 8,

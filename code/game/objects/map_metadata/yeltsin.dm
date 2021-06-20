@@ -18,7 +18,7 @@
 		)
 	age = "1990"
 	ordinal_age = 7
-	faction_distribution_coeffs = list(RUSSIAN = 0.2, CIVILIAN = 0.8)
+	faction_distribution_coeffs = list(RUSSIAN = 0.3, CIVILIAN = 0.7)
 	battle_name = "Battle for the Russian Parliament."
 	mission_start_message = ""
 	faction1 = CIVILIAN
@@ -50,11 +50,15 @@
 /obj/map_metadata/yeltsin/job_enabled_specialcheck(var/datum/job/J)
 	..()
 	if (J.is_yeltsin == TRUE)
-		if (gamemode != "Protect the VIP")
-			if (J.is_kremlin == TRUE)
-				. = FALSE
-			else
+		. = TRUE
+	else
+		. = FALSE
+	if (J.is_yeltsin == TRUE)
+		if (gamemode != "Siege")
+			if (J.is_whitehouse == TRUE)
 				. = TRUE
+			else
+				. = FALSE
 		else
 			. = TRUE
 	else
@@ -333,5 +337,4 @@
 				return TRUE
 		else
 			return !faction1_can_cross_blocks()
-
 	return FALSE

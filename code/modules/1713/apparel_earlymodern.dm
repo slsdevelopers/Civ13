@@ -518,7 +518,8 @@
 		/obj/item/weapon/material/shovel,
 		/obj/item/weapon/key,
 		/obj/item/weapon/melee/classic_baton,
-		/obj/item/flashlight
+		/obj/item/flashlight,
+		/obj/item/weapon/whistle
 		)
 /obj/item/weapon/storage/belt/jap/soldier
 /obj/item/weapon/storage/belt/jap/soldier/New()
@@ -566,7 +567,6 @@
 /obj/item/weapon/storage/belt/jap/camp_guard
 /obj/item/weapon/storage/belt/jap/camp_guard/New()
 	..()
-	new /obj/item/weapon/key/japanese(src)
 	new /obj/item/weapon/melee/classic_baton(src)
 	new /obj/item/weapon/handcuffs(src)
 	new /obj/item/weapon/handcuffs(src)
@@ -598,8 +598,6 @@
 /obj/item/weapon/storage/belt/jap/camp_officer
 /obj/item/weapon/storage/belt/jap/camp_officer/New()
 	..()
-	new /obj/item/weapon/key/japanese(src)
-	new /obj/item/weapon/key/japanese_officer(src)
 	new /obj/item/weapon/melee/classic_baton(src)
 	new /obj/item/weapon/handcuffs(src)
 	new /obj/item/weapon/handcuffs(src)
