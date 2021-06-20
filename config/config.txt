@@ -75,7 +75,7 @@ LOG_PRAYER
 ALLOW_METADATA
 
 ## allow players to initiate a restart vote
-#ALLOW_VOTE_RESTART
+ALLOW_VOTE_RESTART
 
 ## allow players to initate a mode-change start
 #ALLOW_VOTE_MODE
@@ -127,22 +127,22 @@ USE_JOB_WHITELIST
 SERVER 192.210.161.174:23999
 
 ## donation address
-DONATIONURL https://www.patreon.com/1713ad
+DONATIONURL https://paypal.me/dojodetroit
 
 ## rules address
 RULESURL http://civ13.com/wiki/index.php?title=Rules
 
 ## discord address
-DISCORDURL https://discord.gg/hBEtg4x
+DISCORDURL https://slsgaming.net/discord
 
 ## Wiki address
 WIKIURL https://civ13.github.io/civ13-wiki/
 
 ## Website address
-WEBSITEURL http://civ13.com/
+WEBSITEURL https://slsgaming.net
 
 ##Github address
-GITHUBURL https://github.com/civ13/civ13/
+GITHUBURL https://github.com/slsdevelopers/civ13-sls
 
 ##Github repo id
 ##This can be found by going to https://api.github.com/users/<user name here>/repos
@@ -161,7 +161,7 @@ GITHUBURL https://github.com/civ13/civ13/
 TICK_LIMIT_MC_INIT 500
 
 ##Defines the ticklag for the world.  0.9 is the normal one, 0.5 is smoother.
-TICKLAG 0.4
+TICKLAG 0.5
 
 ## Comment this out to disable automuting
 #AUTOMUTE_ON
