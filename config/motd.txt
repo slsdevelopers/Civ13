@@ -5,7 +5,9 @@ The current map is <b>{server_map}</b>.
 This server is running {server_version}, and you are running {client_version}.
 <h2>RULES: http://civ13.com/rules</h2>
 
-<h2><small>Github: https://github.com/slsdevelopers/Civ13</small></h2>
+<h2><small>Github: https://github.com/slsdevelopers/civ13-sls</small></h2>
 <h2><small>Discord: https://slsgaming.net/discord</small></h2>
 <h2><small>Wiki: https://civ13.github.io/civ13-wiki</small></h2>
 </i>
+
+Running latest version...
